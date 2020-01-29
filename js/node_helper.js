@@ -81,7 +81,7 @@ NodeHelper = Class.extend({
 		this.expressApp = app;
 
 		var publicPath = this.path + "/public";
-		app.use("/" + this.name, express.static(publicPath));
+		app.use("/easteregg" + this.name, express.static(publicPath));
 	},
 
 	/* setSocketIO(io)
